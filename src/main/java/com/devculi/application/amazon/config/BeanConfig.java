@@ -1,4 +1,4 @@
-package com.devculi.application.amazon.beans;
+package com.devculi.application.amazon.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

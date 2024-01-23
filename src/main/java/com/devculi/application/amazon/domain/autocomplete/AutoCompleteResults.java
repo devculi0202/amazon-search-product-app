@@ -1,15 +1,23 @@
-package com.devculi.application.amazon.domain;
+package com.devculi.application.amazon.domain.autocomplete;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class AutoCompleteResults {
-   List<Suggestion> suggestion;
+   @JsonProperty("suggestion")
+   private String suggestion;
+   @JsonProperty("type")
+   private String type;
 }

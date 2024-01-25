@@ -1146,11 +1146,11 @@
   left: 337.547px;
   width: 1017px;
   height: 350px;
-  background-color: red;
+  background-color: #FFFFFF;
   z-index: 2;
 }
 
-.autocomplete-results-container .suggestion-trending-container {
+.autocomplete-results-container #s-suggestion-trending-container .suggestion-trending-container {
   display: none;
 }
   

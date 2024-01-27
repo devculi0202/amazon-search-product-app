@@ -4,7 +4,7 @@
   <title>Amazon.com. Spend less. Smile more.</title>
   <meta charset="utf-8"/>
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/styles/css/style.css"/>
   <link rel="stylesheet" href="/styles/css/styleguide.css"/>
   <link rel="icon" type="image/x-icon" href="/styles/images/amazon_icon.png">
@@ -26,25 +26,55 @@
             <div class="text-wrapper-2">Bangalore 560034</div>
           </div>
           <div class="search">
-            <input type="text" id="search-box" class="search-box" autocomplete="off"
-                   placeholder="Search Amazon" aria-label="Search Amazon">
-            <button class="search-icon">
-              <img class="img" src="/styles/images/search-icon.png"/>
-            </button>
             <div class="left">
               <div class="text-wrapper-3">All</div>
               <img class="down" src="/styles/images/down-1.png"/>
+              <select class="searchDropdownDescription" id="myDropdown">
+                <option selected="selected" value="search-alias=aps">All Departments</option>
+                <option value="search-alias=arts-crafts-intl-ship">Arts & Crafts</option>
+                <option value="search-alias=automotive-intl-ship">Automotive</option>
+                <option value="search-alias=baby-products-intl-ship">Baby</option>
+                <option value="search-alias-beauty-intl-ship">Beauty & Personal Care</option>
+                <option value="search-alias=stripbooks-intl-ship">Books</option>
+                <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+                <option value="search-alias=computers-intl-ship">Computers</option>
+                <option value="search-alias=deals-intl-ship">Deals</option>
+                <option value="search-alias=digital-music">Digital Music</option>
+                <option value="search-alias=electronics-intl-ship">Electronics</option>
+                <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+                <option value="search-alias=hpc-intl-ship">Health & Household</option>
+                <option value="search-alias=kitchen-intl-ship">Home & Kitchen</option>
+                <option value="search-alias=industrial-intl-ship">Industrial & Scientific</option>
+                <option value="search-alias-digital-text">Kindle Store</option>
+                <option value="search-alias=luggage-intl-ship">Luggage</option>
+                <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+                <option value="search-alias=movies-tv-intl-ship">Movies & TV</option>
+                <option value="search-alias=music-intl-ship">Music, CDs & Vinyl</option>
+                <option value="search-alias-pets-intl-ship">Pet Supplies</option>
+                <option value="search-alias=instant-video">Prime Video</option>
+                <option value="search-alias=software-intl-ship">Software</option>
+                <option value="search-alias=sporting-intl-ship">Sports & Outdoors</option>
+                <option value="search-alias=tools-intl-ship">Tools & Home Improvement</option>
+                <option value="search-alias=toys-and-games-intl-ship">Toys & Games</option>
+                <option value="search-alias=videogames-intl-ship">Video Games</option>
+                <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
+              </select>
             </div>
+            <input type="text" id="search-box" class="nav-fill search-box" autocomplete="off"
+                   placeholder="Search Amazon" aria-label="Search Amazon">
+            <button class="nav-right search-icon">
+              <img class="img" src="/styles/images/search-icon.png"/>
+            </button>
             <div class="autocomplete-results-container">
               <div id="autocomplete-results">
-                   <div class="results">1</div>
-                   <div class="results">2</div>
-                   <div class="results">3</div>
+                <div class="results"></div>
+                <div class="results"></div>
+                <div class="results"></div>
               </div>
               <div id="s-suggestion-trending-container">
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
-                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <i class="fa fa-arrow-trend-up" aria-hidden="true"></i>
                   </div>
                   <div class="suggestion-trending-text">valentines day gifts for her</div>
                 </div>
@@ -52,58 +82,64 @@
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">valentines day gifts for him</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">valentines day gifts for kids</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">umbrella</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">thermometer</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">electric toothbrush</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">vitamin d</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">coffee pods</div>
                 </div>
                 <div class="suggestion-trending-container">
                   <div class="suggestion-trending-icon">
                     <i class="fa-solid fa-arrow-trend-up"></i>
                   </div>
-                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                  <div class="suggestion-trending-text">snail mucin serum</div>
                 </div>
-
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">candy</div>
+                </div>
 
               </div>
             </div>
           </div>
           <div class="country">
-            <img class="india" src="/styles/images/country.png"/> <img class="down-2"
-                                                                       src="/styles/images/down-1.png"/>
+            <img class="india" src="/styles/images/country.png"/>
+            <div class="language">EN</div>
+            <img class="down-2" src="/styles/images/down-1.png"/>
           </div>
           <div class="frame-wrapper">
             <div class="frame-3">
@@ -120,11 +156,9 @@
                 <div class="text-wrapper-4">Returns</div>
                 <div class="text-wrapper-5">&amp; Orders</div>
               </div>
-              <img class="down-3" src="/styles/images/down-1.png"/>
             </div>
           </div>
           <div class="cart">
-            <img class="down-3" src="/styles/images/cart.png"/>
             <div class="shopping-cart">
               <div class="text-wrapper-6">2</div>
             </div>

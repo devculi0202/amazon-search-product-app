@@ -3,9 +3,6 @@ package com.devculi.application.amazon.invokers;
 import com.devculi.application.amazon.constants.APIConstant;
 import com.devculi.application.amazon.domain.autocomplete.AmazonAutoComplete;
 import com.devculi.application.amazon.exceptions.ThirdPartyException;
-import jakarta.annotation.PostConstruct;
-import java.util.HashMap;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -15,7 +12,7 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @Component
-public class RainForestApiInvoker {
+public class AutoCompleteApiInvoker {
 
   @Autowired
   private RestTemplate restTemplate;
@@ -36,8 +33,8 @@ public class RainForestApiInvoker {
   private String buildUrl(String searchTerm) {
     UriComponents uriComponents = UriComponentsBuilder.newInstance().scheme(APIConstant.SCHEMA)
         .host(APIConstant.HOST).path(APIConstant.AUTOCOMPLETE_PATH)
-        .queryParam("api_key", APIConstant.API_KEY).queryParam("type", "autocomplete")
-        .queryParam("amazon_domain", "amazon.com").queryParam("search_term", searchTerm).build();
+        .queryParam("mid", APIConstant.API_KEY).queryParam("alias", "aps")
+        .queryParam("prefix", searchTerm).build();
     return uriComponents.toUriString();
   }
 

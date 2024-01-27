@@ -16,12 +16,12 @@ import lombok.ToString;
 @ToString
 @EqualsAndHashCode
 public class AmazonAutoComplete {
-  @JsonProperty("request_info")
-  RequestInfo requestInfo;
-  @JsonProperty("request_parameters")
-  RequestParameters requestParameters;
-  @JsonProperty("request_metadata")
-  RequestMetadata requestMetadata;
-  @JsonProperty("autocomplete_results")
-  List<AutoCompleteResults> autoCompleteResults;
+  @JsonProperty("alias")
+  String alias;
+  @JsonProperty("prefix")
+  String prefix;
+  @JsonProperty("suffix")
+  String suffix;
+  @JsonProperty("suggestions")
+  List<Suggestions> suggestions;
 }

@@ -13,8 +13,13 @@ $(document).ready(function () {
       div.style.display = "block";
     });
   });
-  searchBox.addEventListener("input", function () {
 
+  searchBox.addEventListener("mouseout", function () {
+    // autocompleteContainer.style.display = "none"
+    // suggestionTrendingContainer.style.display = "none";
+  });
+
+  searchBox.addEventListener("input", function () {
     // Get the value entered by the user
     var searchText = searchBox.value;
     autocompleteContainer.style.display = searchText ? "block" : "none";
@@ -25,13 +30,22 @@ $(document).ready(function () {
     }
   });
 
+  var dropdown = document.getElementById("myDropdown");
+  var textWrapper = document.querySelector(".text-wrapper-3");
+
+  // Add a change event listener to the dropdown
+  dropdown.addEventListener("change", function() {
+    // Update the text of the text-wrapper-3 div with the selected option's text
+    textWrapper.textContent = dropdown.options[dropdown.selectedIndex].text;
+  });
+
   function invokeAPI(searchText, containerId, callback) {
     fetch(
         "http://localhost:8080/search/autocomplete?term=" + encodeURIComponent(
             searchText))
     .then(response => response.json())
     .then(result => {
-      const suggestions = result.map(item => item.suggestion);
+      const suggestions = result.map(item => item.value);
 
       // Update the content of the specified container with the suggestions
       const container = document.getElementById(containerId);

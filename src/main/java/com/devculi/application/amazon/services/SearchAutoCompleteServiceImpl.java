@@ -20,10 +20,10 @@ public class SearchAutoCompleteServiceImpl implements SearchAutoCompleteService 
   }
 
   @Override
-  public Optional<List<Suggestions>> searchAutoCompleteBySearchTerm(String searchTerm)
+  public Optional<List<Suggestions>> searchAutoCompleteBySearchTerm(String category, String searchTerm)
       throws  ThirdPartyException {
     System.out.println("Start invoking search autocomplete");
-    ResponseEntity<AmazonAutoComplete> results =  rainForestApiInvoker.invokeGetAutoCompleteAmazon(searchTerm);
+    ResponseEntity<AmazonAutoComplete> results =  rainForestApiInvoker.invokeGetAutoCompleteAmazon(category, searchTerm);
     if (results!= null && results.getBody() != null){
       System.out.println("Stopped invoking search autocomplete");
       return Optional.of(results.getBody().getSuggestions());

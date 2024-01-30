@@ -17,11 +17,11 @@ public class AutoCompleteApiInvoker {
   @Autowired
   private RestTemplate restTemplate;
 
-  public ResponseEntity<AmazonAutoComplete> invokeGetAutoCompleteAmazon(String searchTerm)
+  public ResponseEntity<AmazonAutoComplete> invokeGetAutoCompleteAmazon(String category, String searchTerm)
       throws ThirdPartyException {
     ResponseEntity<AmazonAutoComplete> completeAmazonResults = null;
     try {
-      String url = buildUrl(searchTerm);
+      String url = buildUrl(category, searchTerm);
       completeAmazonResults = restTemplate.getForEntity(url, AmazonAutoComplete.class);
     } catch (HttpStatusCodeException e) {
       System.out.println(String.format("Error %s", e.getMessage()));
@@ -30,10 +30,10 @@ public class AutoCompleteApiInvoker {
     return completeAmazonResults;
   }
 
-  private String buildUrl(String searchTerm) {
+  private String buildUrl(String category, String searchTerm) {
     UriComponents uriComponents = UriComponentsBuilder.newInstance().scheme(APIConstant.SCHEMA)
         .host(APIConstant.HOST).path(APIConstant.AUTOCOMPLETE_PATH)
-        .queryParam("mid", APIConstant.API_KEY).queryParam("alias", "aps")
+        .queryParam("mid", APIConstant.API_KEY).queryParam("alias", category)
         .queryParam("prefix", searchTerm).build();
     return uriComponents.toUriString();
   }

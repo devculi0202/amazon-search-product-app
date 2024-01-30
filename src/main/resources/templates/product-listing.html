@@ -6,6 +6,7 @@
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/styles/css/style.css"/>
+  <link rel="stylesheet" href="/styles/css/resultsort.css"/>
   <link rel="stylesheet" href="/styles/css/styleguide.css"/>
   <link rel="icon" type="image/x-icon" href="/styles/images/amazon_icon.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -14,7 +15,7 @@
   <script type="text/javascript" src="/styles/js/amazon-autocomplete.js"></script>
 </head>
 <body>
-<div class="home">
+<div id="home-container" class="home">
   <div class="div">
     <div class="nav">
       <div class="top-header">
@@ -67,8 +68,6 @@
             </button>
             <div class="autocomplete-results-container">
               <div id="autocomplete-results">
-                <div class="results"></div>
-                <div class="results"></div>
                 <div class="results"></div>
               </div>
               <div id="s-suggestion-trending-container">
@@ -186,199 +185,269 @@
       </div>
     </div>
     <div class="overlap">
-      <div class="content-area"></div>
-      <img class="amazon-2" src="/styles/images/amazon.png"/>
-      <div class="frame-5">
-        <div class="poster">
-          <div class="profile">
-            <img class="profile-2" src="/styles/images/profile-1.svg"/>
-            <div class="text-wrapper-14">Hi, John</div>
-            <div class="text-wrapper-15">Customer since 2017</div>
-          </div>
-          <div class="text-wrapper-16">Top links for you</div>
-          <div class="grouped-3">
-            <div class="frame-6">
-              <div class="element">
-                <div class="frame-7">
-                  <div class="text-wrapper-17">Your Orders</div>
-                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group">
-                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
-                  <img class="oneplus-leak" src="/styles/images/oneplus-6-leak-amazon-de-4-1.png"/>
-                </div>
-              </div>
-            </div>
-            <div class="frame-6">
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-8">
-                    <img class="image" src="img/image-6.png"/>
-                    <div class="text-wrapper-18">Watches for Men</div>
-                  </div>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-9">
-                    <img class="hero" src="img/hero-2-1.png"/>
-                    <div class="text-wrapper-18">Fashion</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="result-sort">
+        <div class="text">
+          <p class="text-wrapper">1-16 of over 2,000 results for</p>
+          <div class="div">“phone”</div>
         </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
-        </div>
-        <div class="frame-10">
-          <div class="poster-2">
-            <p class="p">Shop on the Amazon App</p>
-            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
-              pocket</p>
-            <div class="text-wrapper-21">Download the Amazon App</div>
-          </div>
-          <img class="laptops" src="img/laptops-sept2019-1.png"/>
-        </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
+        <div class="button">
+          <div class="text-wrapper-2">Sort by:</div>
+          <div class="text-wrapper-3">Featured</div>
+          <img class="chevron-down" src="/styles/images/chevron-down.png"/>
         </div>
       </div>
-      <div id="block-second" class="frame-5">
-        <div class="poster">
-          <div class="profile">
-            <img class="profile-2" src="img/profile-1.svg"/>
-            <div class="text-wrapper-14">Hi, John</div>
-            <div class="text-wrapper-15">Customer since 2017</div>
-          </div>
-          <div class="text-wrapper-16">Top links for you</div>
-          <div class="grouped-3">
-            <div class="frame-6">
-              <div class="element">
-                <div class="frame-7">
-                  <div class="text-wrapper-17">Your Orders</div>
-                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group">
-                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
-                  <img class="oneplus-leak" src="img/oneplus-6-leak-amazon-de-4-1.png"/>
-                </div>
-              </div>
+      <div class="refinements-container">
+        <div class="refinement-section">
+          <div class="condition-type-title">Department</div>
+          <li class="condition-type">Smart Phones & Basic Mobiles</li>
+          <li class="condition-type navigation-indent-1">Smart Phones</li>
+          <li class="condition-type navigation-indent-1">Basic Mobiles</li>
+        </div>
+
+        <div class="refinement-section">
+          <div class="condition-type-title">Customer Review</div>
+          <li class="condition-type star starts-4">
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="empty-star" src="/styles/images/star-empty.png"/>
+            <div class="label">
+              <div class="up">&amp; Up</div>
             </div>
-            <div class="frame-6">
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-8">
-                    <img class="image" src="img/image-6.png"/>
-                    <div class="text-wrapper-18">Watches for Men</div>
-                  </div>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-9">
-                    <img class="hero" src="img/hero-2-1.png"/>
-                    <div class="text-wrapper-18">Fashion</div>
-                  </div>
-                </div>
-              </div>
+          </li>
+          <li class="condition-type star starts-3">
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="empty-star" src="/styles/images/star-empty.png"/>
+            <div class="label">
+              <div class="up">&amp; Up</div>
             </div>
-          </div>
-        </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
-        </div>
-        <div class="frame-10">
-          <div class="poster-2">
-            <p class="p">Shop on the Amazon App</p>
-            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
-              pocket</p>
-            <div class="text-wrapper-21">Download the Amazon App</div>
-          </div>
-          <img class="laptops" src="img/laptops-sept2019-1.png"/>
-        </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
-        </div>
-      </div>
-      <div id="block-third" class="frame-5">
-        <div class="poster">
-          <div class="profile">
-            <img class="profile-2" src="img/profile-1.svg"/>
-            <div class="text-wrapper-14">Hi, John</div>
-            <div class="text-wrapper-15">Customer since 2017</div>
-          </div>
-          <div class="text-wrapper-16">Top links for you</div>
-          <div class="grouped-3">
-            <div class="frame-6">
-              <div class="element">
-                <div class="frame-7">
-                  <div class="text-wrapper-17">Your Orders</div>
-                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group">
-                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
-                  <img class="oneplus-leak" src="img/oneplus-6-leak-amazon-de-4-1.png"/>
-                </div>
-              </div>
+          </li>
+          <li class="condition-type star starts-2">
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="empty-star" src="/styles/images/star-empty.png"/>
+            <div class="label">
+              <div class="up">&amp; Up</div>
             </div>
-            <div class="frame-6">
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-8">
-                    <img class="image" src="img/image-6.png"/>
-                    <div class="text-wrapper-18">Watches for Men</div>
-                  </div>
-                </div>
-              </div>
-              <div class="element">
-                <div class="group-2">
-                  <div class="frame-9">
-                    <img class="hero" src="img/hero-2-1.png"/>
-                    <div class="text-wrapper-18">Fashion</div>
-                  </div>
-                </div>
-              </div>
+          </li>
+          <li class="condition-type star starts-1">
+            <img class="star" src="/styles/images/star.png"/>
+            <img class="empty-star" src="/styles/images/star-empty.png"/>
+            <div class="label">
+              <div class="up">&amp; Up</div>
             </div>
-          </div>
+          </li>
         </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
+
+        <div class="refinement-section">
+          <div class="condition-type-title ">Brands</div>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Apple
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
         </div>
-        <div class="frame-10">
-          <div class="poster-2">
-            <p class="p">Shop on the Amazon App</p>
-            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
-              pocket</p>
-            <div class="text-wrapper-21">Download the Amazon App</div>
-          </div>
-          <img class="laptops" src="img/laptops-sept2019-1.png"/>
+
+        <div class="refinement-section">
+          <div class="condition-type-title ">Headphones Jack</div>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Apple
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
         </div>
-        <div class="poster">
-          <p class="p">Up to 70% off | Electronics clearance store</p>
-          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
-          <div class="text-wrapper-19">See more</div>
+
+        <div class="refinement-section">
+          <div class="condition-type-title ">Theme</div>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Apple
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+        </div>
+
+        <div class="refinement-section">
+          <div class="condition-type-title ">Noise Control</div>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Apple
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+        </div>
+
+        <div class="refinement-section">
+          <div class="condition-type-title ">Brands</div>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Apple
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
+          <li class="condition-type item-checkbox">
+            <label>
+              <input type="checkbox"> Samsung
+            </label>
+          </li>
         </div>
       </div>
     </div>
+
+    <div class="product-listing">
+      <div class="product">
+        <div class="product-image-container">
+          <img src="/styles/images/product-img.jpg">
+        </div>
+        <div class="product-descriptions-container">
+          <div class="title-recipe">
+            <h2>
+              <a>
+                <span>Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C Charging, Up to 2X More Active Noise Cancelling Bluetooth Headphones, Transparency Mode, Adaptive Audio, Personalized Spatial Audio</span>
+              </a>
+            </h2>
+          </div>
+          <div class="rating-container">
+            <div class="star-voted">
+              <div class="stars stars-4.5">
+                <div class="star">
+                  <img src="/styles/images/star.png">
+                </div>
+                <div class="star">
+                  <img src="/styles/images/star.png">
+                </div>
+                <div class="star">
+                  <img src="/styles/images/star.png">
+                </div>
+                <div class="star">
+                  <img src="/styles/images/star.png">
+                </div>
+                <div class="star">
+                  <img src="/styles/images/star.png">
+                </div>
+              </div>
+              <div class="down-icon">8823</div>
+              <div class="stars">8823</div>
+            </div>
+          </div>
+          <div class="numbers-bought">
+            <span>10k+</span>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+        </div>
+        <div class="product-descriptions-container"></div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+        </div>
+        <div class="product-descriptions-container"></div>
+      </div>
+      <div class="product">
+        <div class="product-image-container">
+        </div>
+        <div class="product-descriptions-container"></div>
+      </div>
+    </div>
   </div>
+</div>
 </div>
 <div class="copilot-secure-display">
   <hr>

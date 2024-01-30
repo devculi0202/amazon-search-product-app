@@ -7,6 +7,6 @@ import java.util.Optional;
 
 
 public interface SearchAutoCompleteService {
-   Optional<List<Suggestions>> searchAutoCompleteBySearchTerm(String searchTerm)
+   Optional<List<Suggestions>> searchAutoCompleteBySearchTerm(String category, String searchTerm)
        throws ThirdPartyException;
 }

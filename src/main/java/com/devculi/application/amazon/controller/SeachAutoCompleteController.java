@@ -23,9 +23,10 @@ public class SeachAutoCompleteController {
 
   @GetMapping("/search/autocomplete")
   public List<Suggestions> searchAutoComplete(
+      @RequestParam(name = "category", required = false) String category,
       @RequestParam(name = "term", required = false) String term,
       Model model) throws ThirdPartyException {
-    return searchAutoCompleteService.searchAutoCompleteBySearchTerm(term).orElse(
+    return searchAutoCompleteService.searchAutoCompleteBySearchTerm(category, term).orElse(
         Collections.EMPTY_LIST);
   }
 }

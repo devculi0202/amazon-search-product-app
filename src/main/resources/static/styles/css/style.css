@@ -1190,10 +1190,22 @@ hr {
   padding-right: 8px;
   height: 35px;
   cursor: pointer;
-
 }
 
 .suggestion-trending-container:hover {
+  background-color: #eee;
+}
+
+#autocomplete-results .results {
+  display: flex !important;
+  font-size: 16px;
+  height: 35px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 4px;
+}
+
+#autocomplete-results .results:hover {
   background-color: #eee;
 }
 

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Amazon.com. Spend less. Smile more.</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/styles/css/style.css"/>
+  <link rel="stylesheet" href="/styles/css/styleguide.css"/>
+  <link rel="icon" type="image/x-icon" href="/styles/images/amazon_icon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+          integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="/styles/js/amazon-autocomplete.js"></script>
+</head>
+<body>
+<div id="home-container" class="home">
+  <div class="div">
+    <div class="nav">
+      <div class="top-header">
+        <div class="frame">
+          <img class="amazon" src="/styles/images/amazon-1.png"/>
+          <div class="frame-2">
+            <img class="location" src="/styles/images/location-1.png"/>
+            <div class="text-wrapper">Deliver to John</div>
+            <div class="text-wrapper-2">Bangalore 560034</div>
+          </div>
+          <div class="search">
+            <div class="left">
+              <div class="text-wrapper-3">All</div>
+              <img class="down" src="/styles/images/down-1.png"/>
+              <select class="searchDropdownDescription" id="myDropdown">
+                <option selected="selected" value="search-alias=aps">All Departments</option>
+                <option value="search-alias=arts-crafts-intl-ship">Arts & Crafts</option>
+                <option value="search-alias=automotive-intl-ship">Automotive</option>
+                <option value="search-alias=baby-products-intl-ship">Baby</option>
+                <option value="search-alias-beauty-intl-ship">Beauty & Personal Care</option>
+                <option value="search-alias=stripbooks-intl-ship">Books</option>
+                <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+                <option value="search-alias=computers-intl-ship">Computers</option>
+                <option value="search-alias=deals-intl-ship">Deals</option>
+                <option value="search-alias=digital-music">Digital Music</option>
+                <option value="search-alias=electronics-intl-ship">Electronics</option>
+                <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+                <option value="search-alias=hpc-intl-ship">Health & Household</option>
+                <option value="search-alias=kitchen-intl-ship">Home & Kitchen</option>
+                <option value="search-alias=industrial-intl-ship">Industrial & Scientific</option>
+                <option value="search-alias-digital-text">Kindle Store</option>
+                <option value="search-alias=luggage-intl-ship">Luggage</option>
+                <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+                <option value="search-alias=movies-tv-intl-ship">Movies & TV</option>
+                <option value="search-alias=music-intl-ship">Music, CDs & Vinyl</option>
+                <option value="search-alias-pets-intl-ship">Pet Supplies</option>
+                <option value="search-alias=instant-video">Prime Video</option>
+                <option value="search-alias=software-intl-ship">Software</option>
+                <option value="search-alias=sporting-intl-ship">Sports & Outdoors</option>
+                <option value="search-alias=tools-intl-ship">Tools & Home Improvement</option>
+                <option value="search-alias=toys-and-games-intl-ship">Toys & Games</option>
+                <option value="search-alias=videogames-intl-ship">Video Games</option>
+                <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
+              </select>
+            </div>
+            <input type="text" id="search-box" class="nav-fill search-box" autocomplete="off"
+                   placeholder="Search Amazon" aria-label="Search Amazon">
+            <button class="nav-right search-icon">
+              <img class="img" src="/styles/images/search-icon.png"/>
+            </button>
+            <div class="autocomplete-results-container">
+              <div id="autocomplete-results">
+                <div class="results"></div>
+              </div>
+              <div id="s-suggestion-trending-container">
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa fa-arrow-trend-up" aria-hidden="true"></i>
+                  </div>
+                  <div class="suggestion-trending-text">valentines day gifts for her</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">valentines day gifts for him</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">valentines day gifts for kids</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">umbrella</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">thermometer</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">electric toothbrush</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">vitamin d</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">coffee pods</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">snail mucin serum</div>
+                </div>
+                <div class="suggestion-trending-container">
+                  <div class="suggestion-trending-icon">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                  <div class="suggestion-trending-text">candy</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="country">
+            <img class="india" src="/styles/images/country.png"/>
+            <div class="language">EN</div>
+            <img class="down-2" src="/styles/images/down-1.png"/>
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-3">
+              <div class="personal">
+                <div class="text-wrapper-4">Hello, John</div>
+                <div class="text-wrapper-5">Accounts &amp; Lists</div>
+              </div>
+              <img class="down-3" src="/styles/images/down-1.png"/>
+            </div>
+          </div>
+          <div class="div-wrapper">
+            <div class="frame-3">
+              <div class="personal-2">
+                <div class="text-wrapper-4">Returns</div>
+                <div class="text-wrapper-5">&amp; Orders</div>
+              </div>
+            </div>
+          </div>
+          <div class="cart">
+            <div class="shopping-cart">
+              <div class="text-wrapper-6">2</div>
+            </div>
+            <div class="text-wrapper-7">Cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="all">
+          <img class="hamburger" src="/styles/images/hamburger-1.svg"/>
+          <div class="text-wrapper-8">All</div>
+        </div>
+        <div class="text-wrapper-9">Fashion</div>
+        <div class="text-wrapper-9">Mobiles</div>
+        <div class="text-wrapper-9">Gift Ideas</div>
+        <div class="prime">
+          <div class="text-wrapper-9">Prime</div>
+          <img class="down-4" src="/styles/images/down-1.png"/>
+        </div>
+        <div class="text-wrapper-9">Amazon Pay</div>
+        <div class="text-wrapper-9">Gift Cards</div>
+        <div class="text-wrapper-9">Sports, Fitness &amp; Outdoors</div>
+        <div class="text-wrapper-9">Computers</div>
+        <div class="text-wrapper-9">Customer Service</div>
+      </div>
+    </div>
+    <div class="overlap">
+      <div class="content-area"></div>
+      <img class="amazon-2" src="/styles/images/amazon.png"/>
+      <div class="frame-5">
+        <div class="poster">
+          <div class="profile">
+            <img class="profile-2" src="/styles/images/profile-1.svg"/>
+            <div class="text-wrapper-14">Hi, John</div>
+            <div class="text-wrapper-15">Customer since 2017</div>
+          </div>
+          <div class="text-wrapper-16">Top links for you</div>
+          <div class="grouped-3">
+            <div class="frame-6">
+              <div class="element">
+                <div class="frame-7">
+                  <div class="text-wrapper-17">Your Orders</div>
+                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group">
+                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
+                  <img class="oneplus-leak" src="/styles/images/oneplus-6-leak-amazon-de-4-1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="frame-6">
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-8">
+                    <img class="image" src="img/image-6.png"/>
+                    <div class="text-wrapper-18">Watches for Men</div>
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-9">
+                    <img class="hero" src="img/hero-2-1.png"/>
+                    <div class="text-wrapper-18">Fashion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+        <div class="frame-10">
+          <div class="poster-2">
+            <p class="p">Shop on the Amazon App</p>
+            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
+              pocket</p>
+            <div class="text-wrapper-21">Download the Amazon App</div>
+          </div>
+          <img class="laptops" src="img/laptops-sept2019-1.png"/>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+      </div>
+      <div id="block-second" class="frame-5">
+        <div class="poster">
+          <div class="profile">
+            <img class="profile-2" src="img/profile-1.svg"/>
+            <div class="text-wrapper-14">Hi, John</div>
+            <div class="text-wrapper-15">Customer since 2017</div>
+          </div>
+          <div class="text-wrapper-16">Top links for you</div>
+          <div class="grouped-3">
+            <div class="frame-6">
+              <div class="element">
+                <div class="frame-7">
+                  <div class="text-wrapper-17">Your Orders</div>
+                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group">
+                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
+                  <img class="oneplus-leak" src="img/oneplus-6-leak-amazon-de-4-1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="frame-6">
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-8">
+                    <img class="image" src="img/image-6.png"/>
+                    <div class="text-wrapper-18">Watches for Men</div>
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-9">
+                    <img class="hero" src="img/hero-2-1.png"/>
+                    <div class="text-wrapper-18">Fashion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+        <div class="frame-10">
+          <div class="poster-2">
+            <p class="p">Shop on the Amazon App</p>
+            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
+              pocket</p>
+            <div class="text-wrapper-21">Download the Amazon App</div>
+          </div>
+          <img class="laptops" src="img/laptops-sept2019-1.png"/>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+      </div>
+      <div id="block-third" class="frame-5">
+        <div class="poster">
+          <div class="profile">
+            <img class="profile-2" src="img/profile-1.svg"/>
+            <div class="text-wrapper-14">Hi, John</div>
+            <div class="text-wrapper-15">Customer since 2017</div>
+          </div>
+          <div class="text-wrapper-16">Top links for you</div>
+          <div class="grouped-3">
+            <div class="frame-6">
+              <div class="element">
+                <div class="frame-7">
+                  <div class="text-wrapper-17">Your Orders</div>
+                  <img class="prime-boxes" src="img/prime-boxes-5-720-1.png"/>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group">
+                  <div class="mobiles-accessories">Mobiles &amp; Accessories</div>
+                  <img class="oneplus-leak" src="img/oneplus-6-leak-amazon-de-4-1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="frame-6">
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-8">
+                    <img class="image" src="img/image-6.png"/>
+                    <div class="text-wrapper-18">Watches for Men</div>
+                  </div>
+                </div>
+              </div>
+              <div class="element">
+                <div class="group-2">
+                  <div class="frame-9">
+                    <img class="hero" src="img/hero-2-1.png"/>
+                    <div class="text-wrapper-18">Fashion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+        <div class="frame-10">
+          <div class="poster-2">
+            <p class="p">Shop on the Amazon App</p>
+            <p class="text-wrapper-20">Fast, convenient and secure | Over 17 crore products in your
+              pocket</p>
+            <div class="text-wrapper-21">Download the Amazon App</div>
+          </div>
+          <img class="laptops" src="img/laptops-sept2019-1.png"/>
+        </div>
+        <div class="poster">
+          <p class="p">Up to 70% off | Electronics clearance store</p>
+          <img class="IN-PC-BAU" src="img/v238940049-IN-PC-BAU-edit-creation-laptops2x-1.png"/>
+          <div class="text-wrapper-19">See more</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copilot-secure-display">
+  <hr>
+  <div class="sign-in-title">
+    <p>See personalized recommendations</p>
+  </div>
+  <div class="action-button">
+    <span class="action-inner">Sign in</span>
+  </div>
+  <div class="sign-in-tooltip-new-customer">
+    <p>New customer? Start here</p>
+  </div>
+  <div class="line-bottom">
+    <hr>
+  </div>
+
+</div>
+<div class="footer">
+  <div class="navBackToTop">
+    <p>Back To Top</p>
+  </div>
+  <div class="navAccessibility">
+    <div class="navFooterVerticalRow">
+      <div class="column">
+        <div class="colHead">
+          Get to Know Us
+        </div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Amazon</li>
+          <li>Investor Relations</li>
+          <li>Amazon Devices</li>
+          <li>Amazon Science</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="colHead">
+          Let Us Help You
+        </div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Amazon</li>
+          <li>Investor Relations</li>
+          <li>Amazon Devices</li>
+          <li>Amazon Science</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="colHead">
+          Make Money with Us
+        </div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Amazon</li>
+          <li>Investor Relations</li>
+          <li>Amazon Devices</li>
+          <li>Amazon Science</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="colHead">
+          Amazon Payment Products
+        </div>
+        <ul>
+          <li>Careers</li>
+          <li>Blog</li>
+          <li>About Amazon</li>
+          <li>Investor Relations</li>
+          <li>Amazon Devices</li>
+          <li>Amazon Science</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-line">
+    <hr>
+  </div>
+  <div class="navFooterPadItemLine">
+    <div class="navFooterLogoLine">
+      <div class="logo">
+      </div>
+    </div>
+    <div class="icp-container-desktop">
+      <div class="lang">
+        <a class="icp-button">
+          <span class="icp-color-base">English</span>
+        </a>
+      </div>
+      <div class="lang">
+        <a class="icp-button">
+          <span class="icp-color-base">Dollar</span>
+        </a>
+      </div>
+      <div class="lang">
+        <a class="icp-button">
+          <span class="icp-color-base">UnitedStates</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-line-1">
+    <hr>
+  </div>
+  <div class="navFooterCopyright">
+    <ul>
+      <li>Conditions of Use</li>
+      <li>Privacy Notice</li>
+      <li>Your Ads Privacy Choices</li>
+    </ul>
+    <span>© 1996-2024, Amazon.com, Inc. or its affiliates</span>
+  </div>
+</div>
+
+</body>
+</html>
